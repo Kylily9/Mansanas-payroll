@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple inc. Payroll</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="form-page">
+    <h2>Employee Payroll</h2>
+    <form id="payrollForm">
+      <label>Employee ID:</label>
+      <input type="text" id="empID" placeholder=" " required />
+
+      <label>Last Name:</label>
+      <input type="text" id="lastName" placeholder=" " required />
+
+      <label>First Name:</label>
+      <input type="text" id="firstName" placeholder=" " required />
+
+      <label>Middle Name:</label>
+      <input type="text" id="middleName" placeholder=" " />
+
+      <label>Position:</label>
+      <div class="position-container">
+        <input type="text" id="position" placeholder=" " autocomplete="off" required />
+        <div class="position-list" id="positionList"></div>
+      </div>
+
+      <label>Daily Rate: </label>
+      <input type="text" id="dailyRate" placeholder=" " required />
+
+      <label>Work Days:</label>
+      <input type="text" id="workDays" placeholder=" " required>
+
+      <p class="warning" id="warning"></p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="container summary" id="summary-page">
+    <h2>Payroll Summary</h2>
+    <div id="summaryDetails"></div>
+
+    <div class="button-group">
+      <button id="backBtn">Back</button>
+      <button id="sendBtn">Send</button>
+      <button id="printBtn">Print</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
